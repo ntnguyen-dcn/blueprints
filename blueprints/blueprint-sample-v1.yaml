@@ -1,0 +1,34 @@
+{
+     "kind": "Blueprint",
+     "apiVersion": "intent.automation.dcn.ssu.ac.kr/v1",
+     "metadata": {
+         "name": "blueprint-sample-v1",
+         "namespace": "blueprints",
+         "creationTimestamp": null,
+         "labels": {
+             "app.kubernetes.io/created-by": "kubernetes-as-a-service",
+             "app.kubernetes.io/instance": "blueprint-sample",
+             "app.kubernetes.io/managed-by": "kustomize",
+             "app.kubernetes.io/name": "blueprint",
+             "app.kubernetes.io/part-of": "kubernetes-as-a-service"
+         }
+     },
+     "spec": {
+         "blueprint": [
+             {
+                 "name": "clusterapi-resource-template-default",
+                 "type": "ClusterAPITemplate",
+                 "revision": "1.0.0",
+                 "version": "v1"
+             }
+         ],
+         "values": {
+             "controlPlaneMachineCount": "1",
+             "controlplaneFlavor": "m1.medium",
+             "kubernetesVersion": "v1.24.8",
+             "workerFlavor": "m1.large",
+             "workerMachineCount": "3"
+         }
+     },
+     "status": {}
+ }

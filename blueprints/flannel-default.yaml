@@ -4,7 +4,10 @@
      "metadata": {
          "name": "flannel-default",
          "namespace": "default",
-         "creationTimestamp": null
+         "creationTimestamp": null,
+         "labels": {
+             "app.kubernetes.io/instance": "blueprints"
+         }
      },
      "spec": {
          "values": {

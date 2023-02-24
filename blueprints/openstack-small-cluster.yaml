@@ -4,7 +4,10 @@
      "metadata": {
          "name": "openstack-small-cluster",
          "namespace": "default",
-         "creationTimestamp": null
+         "creationTimestamp": null,
+         "labels": {
+             "app.kubernetes.io/instance": "blueprints"
+         }
      },
      "spec": {
          "blueprint": [

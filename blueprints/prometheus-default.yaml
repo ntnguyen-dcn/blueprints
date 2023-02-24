@@ -1,0 +1,16 @@
+{
+     "kind": "Blueprint",
+     "apiVersion": "intent.automation.dcn.ssu.ac.kr/v1",
+     "metadata": {
+         "name": "prometheus-default",
+         "namespace": "default",
+         "creationTimestamp": null
+     },
+     "spec": {
+         "values": {
+             "configmap": "prometheus-config",
+             "version": "2.41.0"
+         }
+     },
+     "status": {}
+ }

@@ -1,0 +1,17 @@
+{
+     "kind": "Blueprint",
+     "apiVersion": "intent.automation.dcn.ssu.ac.kr/v1",
+     "metadata": {
+         "name": "clusterapi-resource-template-default",
+         "namespace": "default",
+         "creationTimestamp": null
+     },
+     "spec": {
+         "values": {
+             "filename": "cluster-template.yaml",
+             "url": "https://github.com/kubernetes-sigs/cluster-api-provider-openstack/release",
+             "version": "v1"
+         }
+     },
+     "status": {}
+ }

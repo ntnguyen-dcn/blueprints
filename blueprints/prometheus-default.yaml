@@ -4,10 +4,7 @@
      "metadata": {
          "name": "prometheus-default",
          "namespace": "default",
-         "creationTimestamp": null,
-         "labels": {
-             "app.kubernetes.io/instance": "blueprints"
-         }
+         "creationTimestamp": null
      },
      "spec": {
          "values": {

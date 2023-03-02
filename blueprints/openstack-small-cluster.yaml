@@ -4,17 +4,14 @@
      "metadata": {
          "name": "openstack-small-cluster",
          "namespace": "default",
-         "creationTimestamp": null,
-         "labels": {
-             "app.kubernetes.io/instance": "blueprints"
-         }
+         "creationTimestamp": null
      },
      "spec": {
          "blueprint": [
              {
                  "name": "clusterapi-resource-template-default",
                  "type": "ClusterAPITemplate",
-                 "revision": "r1"
+                 "revision": "1.0.0"
              }
          ],
          "values": {

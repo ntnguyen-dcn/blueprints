@@ -4,16 +4,13 @@
      "metadata": {
          "name": "clusterapi-resource-template-default",
          "namespace": "default",
-         "creationTimestamp": null,
-         "labels": {
-             "app.kubernetes.io/instance": "blueprints"
-         }
+         "creationTimestamp": null
      },
      "spec": {
          "values": {
              "filename": "cluster-template.yaml",
              "url": "https://github.com/kubernetes-sigs/cluster-api-provider-openstack/release",
-             "version": "v1"
+             "version": "v0.7.0"
          }
      },
      "status": {}
